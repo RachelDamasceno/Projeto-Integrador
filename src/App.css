@@ -5,7 +5,7 @@
   font-family: Arial, Helvetica, sans-serif, sans-serif;
 }
 
-.home,
+/* .home,
 .sair,
 .suporte,
 .uploadsSalvos,
@@ -15,4 +15,72 @@
   align-items: center;
   justify-content: center;
   font-size: 3rem;
+} */
+
+/* ------------------------------------------- */
+
+.home {
+  height: 96vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10%;
+}
+
+.main-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1em;
+}
+
+.extraction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 35%;
+  background-color: #fdecec;
+}
+
+.logo-img {
+  width: 5%;
+}
+
+.footer {
+  display: flex;
+  justify-content: end;
+  padding-right: 1%;
+}
+
+#input-btn {
+  opacity: 0;
+  display: none;
+}
+
+.input-btn-label {
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  letter-spacing: 1px;
+  background: rgb(61, 8, 115);
+  background: linear-gradient(
+    180deg,
+    rgba(61, 8, 115, 1) 12%,
+    rgba(244, 31, 160, 1) 100%
+  );
+}
+
+.doc-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.image-preview {
+  width: 40%;
+  height: 70%;
 }
