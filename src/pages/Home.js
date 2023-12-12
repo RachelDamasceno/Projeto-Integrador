@@ -31,7 +31,7 @@ function Home() {
         </div>
         <div className="extraction">
           <div className="inner-extraction">
-            <h1>TESTE 2</h1>
+            <h1>TESTE 3</h1>
           </div>
         </div>
       </div>
