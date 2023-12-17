@@ -1,6 +1,6 @@
 .navbar {
   background-color: rgba(88, 86, 86, 0.496);
-  height: 800px;
+  height: 100vh;
   width: 50px;
   display: flex;
   justify-content: center;
@@ -75,4 +75,13 @@
 }
 span {
   margin-left: 16px;
+}
+
+@media (max-width: 850px) {
+  .navbar {
+    width: 25px;
+  }
+  .seta {
+    left: 1%;
+  }
 }

@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 import Footer from "./Footer";
+import Table from "../components/Table";
 
 function Home() {
   const [selectedFile, setSelectedFile] = useState(null);
+  const [tabelaVisivel, setTabelaVisivel] = useState(false);
 
   const handleFileChange = (event) => {
     const file = event.target.files[0];
     setSelectedFile(file);
+  };
+
+  const mostrarTabela = () => {
+    setTabelaVisivel(true);
   };
 
   return (
@@ -26,12 +32,21 @@ function Home() {
                 alt="Preview"
                 className="image-preview"
               />
+              <div className="div-transfer-btn">
+                <button className="data-transfer-btn" onClick={mostrarTabela}>
+                  Extrair dados
+                </button>
+              </div>
             </div>
           )}
         </div>
         <div className="extraction">
           <div className="inner-extraction">
-            <h1>TESTE 3</h1>
+
+            <Table tabelaVisivel={tabelaVisivel} />
+
+           
+
           </div>
         </div>
       </div>
