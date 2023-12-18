@@ -8,6 +8,16 @@
   font-family: "Roboto", sans-serif;
 }
 
+.dadosExtraidos,
+.uploadsSalvos,
+.suporte,
+.sair {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* .home,
 .sair,
 .suporte,
@@ -191,6 +201,12 @@ table {
 @media (max-width: 1050px) {
   .extraction {
     height: 97%;
+  }
+}
+
+@media (max-width: 1330px) {
+  .extraction {
+    height: 100%;
   }
 }
 
