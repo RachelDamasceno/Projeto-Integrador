@@ -42,11 +42,7 @@ function Home() {
         </div>
         <div className="extraction">
           <div className="inner-extraction">
-
             <Table tabelaVisivel={tabelaVisivel} />
-
-           
-
           </div>
         </div>
       </div>
