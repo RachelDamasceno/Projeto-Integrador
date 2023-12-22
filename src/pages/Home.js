@@ -17,13 +17,23 @@ function Home() {
 
   return (
     <div className="main">
-      <div className="home">
-        <div className="main-upload">
-          <h1 className="upload-title">Selecione um arquivo.</h1>
+
+      <section >
+        <h1 className="upload-title">Selecione um arquivo</h1>
+        <div className="btn-header">
           <label className="input-btn-label" for="input-btn">
-            Escolha o arquivo.
+            Escolha o arquivo
           </label>
           <input type="file" id="input-btn" onChange={handleFileChange} />
+          <button className="data-transfer-btn" onClick={mostrarTabela}>
+            Extrair dados
+          </button>
+        </div>
+      </section>
+
+      <div className="home">
+        <div className="main-upload">
+          
           {selectedFile && (
             <div className="doc-preview">
               <h2>Preview do documento.</h2>
@@ -32,11 +42,6 @@ function Home() {
                 alt="Preview"
                 className="image-preview"
               />
-              <div className="div-transfer-btn">
-                <button className="data-transfer-btn" onClick={mostrarTabela}>
-                  Extrair dados
-                </button>
-              </div>
             </div>
           )}
         </div>
@@ -46,6 +51,7 @@ function Home() {
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );

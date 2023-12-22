@@ -32,10 +32,10 @@
 
 /* ------------------------------------------- */
 .main {
-  display: flex;
+  /*display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
 }
 .home {
   height: 96vh;
@@ -54,6 +54,8 @@
 
 .upload-title {
   text-align: center;
+  font-size: 32px;
+  padding: 16px;
 }
 
 .extraction {
@@ -84,17 +86,12 @@
 .input-btn-label {
   text-align: center;
   border: none;
-  padding: 15px;
+  padding: 10px;
   cursor: pointer;
   border-radius: 5px;
   color: white;
   letter-spacing: 2px;
-  background: rgb(61, 8, 115);
-  background: linear-gradient(
-    180deg,
-    rgba(61, 8, 115, 1) 12%,
-    rgba(244, 31, 160, 1) 100%
-  );
+  background: rgba(244, 31, 160);
   box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.75);
 }
 
@@ -107,20 +104,15 @@
 
 .data-transfer-btn {
   font-weight: 600;
-  width: 50%;
+  font-size: 16px;
   text-align: center;
   border: none;
-  padding: 15px;
+  padding: 10px;
   cursor: pointer;
   border-radius: 5px;
   color: white;
   letter-spacing: 2px;
-  background: rgb(61, 8, 115);
-  background: linear-gradient(
-    180deg,
-    rgba(61, 8, 115, 1) 12%,
-    rgba(244, 31, 160, 1) 100%
-  );
+  background: rgba(244, 31, 160);
   box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.75);
 }
 
@@ -214,4 +206,11 @@ table {
   .image-preview {
     width: 80%;
   }
+}
+
+.btn-header {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
 }
