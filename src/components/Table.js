@@ -48,7 +48,6 @@ function Table({ tabelaVisivel }) {
     exampleJson.resultados[0].camposExtraidos.valor_total_da_nota[0].text;
 
   return (
-    <div className="main-table">
       <div className="tabela">
         <h2 className="table-h2">Dados da Nota Fiscal</h2>
         {tabelaVisivel && (
@@ -96,7 +95,6 @@ function Table({ tabelaVisivel }) {
           </table>
         )}
       </div>
-    </div>
   );
 }
 

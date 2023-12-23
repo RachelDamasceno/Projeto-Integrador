@@ -32,23 +32,19 @@ function Home() {
       </section>
 
       <div className="home">
-        <div className="main-upload">
-          
-          {selectedFile && (
-            <div className="doc-preview">
-              <h2>Preview do documento.</h2>
-              <img
-                src={URL.createObjectURL(selectedFile)}
-                alt="Preview"
-                className="image-preview"
-              />
-            </div>
-          )}
-        </div>
-        <div className="extraction">
-          <div className="inner-extraction">
-            <Table tabelaVisivel={tabelaVisivel} />
+        {selectedFile && (
+          <div className="doc-preview">
+            <h2>Preview do documento</h2>
+            <img
+              src={URL.createObjectURL(selectedFile)}
+              alt="Preview"
+              className="image-preview"
+            />
           </div>
+        )}
+
+        <div className="extraction">
+          <Table tabelaVisivel={tabelaVisivel} />
         </div>
       </div>
 
