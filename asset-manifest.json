@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Projeto-Integrador/static/css/main.e8fc45f3.css",
+    "main.js": "/Projeto-Integrador/static/js/main.ea065245.js",
+    "static/media/di2win_logo_dark.png": "/Projeto-Integrador/static/media/di2win_logo_dark.ffb4672a7ff4bbf0efba.png",
+    "index.html": "/Projeto-Integrador/index.html",
+    "main.e8fc45f3.css.map": "/Projeto-Integrador/static/css/main.e8fc45f3.css.map",
+    "main.ea065245.js.map": "/Projeto-Integrador/static/js/main.ea065245.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8fc45f3.css",
+    "static/js/main.ea065245.js"
+  ]
+}
