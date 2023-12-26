@@ -65,8 +65,11 @@ body {
   border-radius: 5px;
   color: white;
   letter-spacing: 2px;
+
+
   background: rgba(244, 31, 160);
   box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.75);
+
 }
 
 .data-transfer-btn {
