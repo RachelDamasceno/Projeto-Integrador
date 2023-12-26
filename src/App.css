@@ -95,7 +95,7 @@
     rgba(61, 8, 115, 1) 12%,
     rgba(244, 31, 160, 1) 100%
   );
-  box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 10px 5px -3px rgba(0, 0, 0, 0.75);
 }
 
 .div-transfer-btn {
