@@ -17,35 +17,38 @@ function Home() {
 
   return (
     <div className="main">
-      <div className="home">
-        <div className="main-upload">
-          <h1 className="upload-title">Selecione um arquivo.</h1>
-          <label className="input-btn-label" for="input-btn">
-            Escolha o arquivo.
+
+      <section >
+        <h1 className="upload-title">Selecione um arquivo</h1>
+        <div className="btn-header">
+          <label className="input-btn-label" htmlFor="input-btn">
+            Escolha o arquivo
           </label>
           <input type="file" id="input-btn" onChange={handleFileChange} />
-          {selectedFile && (
-            <div className="doc-preview">
-              <h2>Preview do documento.</h2>
-              <img
-                src={URL.createObjectURL(selectedFile)}
-                alt="Preview"
-                className="image-preview"
-              />
-              <div className="div-transfer-btn">
-                <button className="data-transfer-btn" onClick={mostrarTabela}>
-                  Extrair dados
-                </button>
-              </div>
-            </div>
-          )}
+          <button className="data-transfer-btn" onClick={mostrarTabela}>
+            Extrair dados
+          </button>
         </div>
-        <div className="extraction">
-          <div className="inner-extraction">
-            <Table tabelaVisivel={tabelaVisivel} />
+      </section>
+
+      <div className="home">
+        {selectedFile && (
+          <div className="doc-preview">
+            <h2>Preview do documento</h2>
+            <img
+              src={URL.createObjectURL(selectedFile)}
+              alt="Preview"
+              className="image-preview"
+            />
           </div>
+        )}
+
+        <div className="extraction">
+          <h2 className="table-h2">Dados da Nota Fiscal</h2> 
+          <Table tabelaVisivel={tabelaVisivel} />
         </div>
       </div>
+
       <Footer />
     </div>
   );
