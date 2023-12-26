@@ -2,36 +2,30 @@ import React, { useState } from "react";
 import exampleJson from "../json/example.json";
 
 function Table({ tabelaVisivel }) {
+
   const codigoVerificacao =
-    tabelaVisivel &&
     exampleJson.resultados[0].camposExtraidos
       .codigo_de_verificacao_e_autencidade[0].text;
 
   const numeroNota =
-    tabelaVisivel &&
     exampleJson.resultados[0].camposExtraidos.numero_nota_fiscal[0].text;
 
   const dataEmissao =
-    tabelaVisivel &&
     exampleJson.resultados[0].camposExtraidos.data_emissao[0].text;
 
   const razaoSocialPrestador =
-    tabelaVisivel &&
     exampleJson.resultados[0].camposExtraidos
       .nome_razao_social_prestador_de_servicos[0].text;
 
   const cpfCnpjPrestador =
-    tabelaVisivel &&
     exampleJson.resultados[0].camposExtraidos.cpf_cnpj_prestador_de_servicos[0]
       .text;
 
   const telefonePrestador =
-    tabelaVisivel &&
     exampleJson.resultados[0].camposExtraidos.telefone_prestador_de_servicos[0]
       .text;
 
   const ruaPrestador =
-    tabelaVisivel &&
     exampleJson.resultados[0].camposExtraidos.rua_prestador_de_servicos[0].text;
 
   const numeroEnderecoPrestador =
@@ -49,7 +43,7 @@ function Table({ tabelaVisivel }) {
 
   return (
       <div className="tabela">
-        <h2 className="table-h2">Dados da Nota Fiscal</h2>
+      
         {tabelaVisivel && (
           <table>
             <tr>

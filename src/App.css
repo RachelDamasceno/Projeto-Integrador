@@ -98,23 +98,18 @@ body {
  max-width: 100%;
 }
 
-.extraction {
-  background-color: #fdecec;
-  box-shadow: 10px 10px 10px -7px rgba(0, 0, 0, 0.75);
-  padding: 32px;
-}
 
 .logo-img {
   width: 100px;
 }
 
 .footer {
-  background: green;
   position: absolute;
   top: 100%;
   width: 100%;
   text-align: end;
   padding: 8px;
+  z-index: -1;
 }
 
 
@@ -126,8 +121,11 @@ body {
   padding: 10px;
 }
 
-table {
+.tabela {
+  padding: 32px;
+  background-color: #fdecec;
   border-collapse: collapse;
+  box-shadow: 10px 10px 10px -7px rgba(0, 0, 0, 0.75);
 }
 
 .table-th {
