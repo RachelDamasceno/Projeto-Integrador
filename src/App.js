@@ -10,7 +10,7 @@ import UploadsSalvos from "./pages/UploadsSalvos";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
