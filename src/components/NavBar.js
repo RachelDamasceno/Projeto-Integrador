@@ -15,7 +15,10 @@ function NavBar() {
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
-        <div className={sidebar ? "navbar hidden" : "navbar"}>
+        <div
+          className={sidebar ? "navbar hidden" : "navbar"}
+          onClick={showSidebar}
+        >
           <Link to="#" className="menu-bars">
             <MdArrowForwardIos onClick={showSidebar} className="seta" />
           </Link>
