@@ -95,6 +95,7 @@ body {
 
 .image-preview {
   max-width: 100%;
+  box-shadow: 7px 7px 5px -3px rgba(0, 0, 0, 0.75);
 }
 
 .logo-img {

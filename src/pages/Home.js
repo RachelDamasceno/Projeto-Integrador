@@ -17,17 +17,18 @@ function Home() {
 
   return (
     <div className="main">
-
-      <section >
+      <section>
         <h1 className="upload-title">Selecione um arquivo</h1>
         <div className="btn-header">
           <label className="input-btn-label" htmlFor="input-btn">
             Escolha o arquivo
           </label>
           <input type="file" id="input-btn" onChange={handleFileChange} />
-          <button className="data-transfer-btn" onClick={mostrarTabela}>
-            Extrair dados
-          </button>
+          {selectedFile && (
+            <button className="data-transfer-btn" onClick={mostrarTabela}>
+              Extrair dados
+            </button>
+          )}
         </div>
       </section>
 
@@ -44,7 +45,7 @@ function Home() {
         )}
 
         <div className="extraction">
-          <h2 className="table-h2">Dados da Nota Fiscal</h2> 
+          <h2 className="table-h2">Dados da Nota Fiscal</h2>
           <Table tabelaVisivel={tabelaVisivel} />
         </div>
       </div>
