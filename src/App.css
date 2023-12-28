@@ -34,7 +34,7 @@
 
 body {
   position: relative;
-  min-height: 94.3vh;
+  min-height: 100vh;
 }
 
 .upload-title {
@@ -104,7 +104,7 @@ body {
 
 .footer {
   position: absolute;
-  top: 100%;
+  bottom: 0;
   width: 100%;
   text-align: end;
   padding: 8px;
@@ -119,10 +119,13 @@ body {
 }
 
 .tabela {
-  padding: 32px;
-  background-color: #fdecec;
   border-collapse: collapse;
   box-shadow: 10px 10px 10px -7px rgba(0, 0, 0, 0.75);
+}
+
+table {
+  padding: 32px;
+  background-color: #fdecec;
 }
 
 .table-th {
