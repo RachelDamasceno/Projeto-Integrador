@@ -64,7 +64,6 @@ body {
   border-radius: 8px;
   color: white;
   letter-spacing: 2px;
-
   background: rgba(244, 31, 160);
   box-shadow: 7px 7px 5px -3px rgba(0, 0, 0, 0.75);
 }
@@ -91,12 +90,16 @@ body {
 
 .doc-preview {
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.doc-preview h2 {
+  padding: 10px;
 }
 
 .image-preview {
   max-width: 100%;
   box-shadow: 7px 7px 5px -3px rgba(0, 0, 0, 0.75);
-  margin-bottom: 50px;
 }
 
 .logo-img {
@@ -122,7 +125,6 @@ body {
 .tabela {
   border-collapse: collapse;
   box-shadow: 10px 10px 10px -7px rgba(0, 0, 0, 0.75);
-  margin-bottom: 50px;
 }
 
 table {
@@ -143,12 +145,16 @@ table {
   text-align: left;
 }
 
+.extraction {
+  margin-bottom: 50px;
+}
+
 @media (max-width: 800px) {
   .home {
     flex-direction: column;
   }
 
-  .image-preview {
+  .doc-preview {
     margin-bottom: 0px;
   }
 }
