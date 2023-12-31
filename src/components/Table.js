@@ -43,7 +43,6 @@ function Table({ tabelaVisivel }) {
 
   return (
       <div className="tabela">
-      
         {tabelaVisivel && (
           <table>
             <tr>
