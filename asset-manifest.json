@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Projeto-Integrador/static/css/main.f56407e2.css",
-    "main.js": "/Projeto-Integrador/static/js/main.ea065245.js",
+    "main.css": "/Projeto-Integrador/static/css/main.709bc22c.css",
+    "main.js": "/Projeto-Integrador/static/js/main.9861678e.js",
     "static/media/di2win_logo_dark.png": "/Projeto-Integrador/static/media/di2win_logo_dark.ffb4672a7ff4bbf0efba.png",
     "index.html": "/Projeto-Integrador/index.html",
-    "main.f56407e2.css.map": "/Projeto-Integrador/static/css/main.f56407e2.css.map",
-    "main.ea065245.js.map": "/Projeto-Integrador/static/js/main.ea065245.js.map"
+    "main.709bc22c.css.map": "/Projeto-Integrador/static/css/main.709bc22c.css.map",
+    "main.9861678e.js.map": "/Projeto-Integrador/static/js/main.9861678e.js.map"
   },
   "entrypoints": [
-    "static/css/main.f56407e2.css",
-    "static/js/main.ea065245.js"
+    "static/css/main.709bc22c.css",
+    "static/js/main.9861678e.js"
   ]
 }
